@@ -1,80 +1,93 @@
-export default function Home() {
-  return (
-    <div className="bg-black text-white min-h-screen font-sans">
-      {/* Hero Section */}
-      <section className="text-center py-24 px-6 bg-gradient-to-r from-blue-600 to-purple-700">
-        <h1 className="text-5xl font-bold mb-6">Welch Digital</h1>
-        <p className="text-xl mb-8">Social Media Management that drives growth, engagement, and results.</p>
-        <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Get Started</button>
-      </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welch Digital</title>
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white min-h-screen font-sans">
 
-      {/* About Section */}
-      <section className="py-20 px-8 max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6">Why Welch Digital?</h2>
-        <p className="text-lg text-gray-300 leading-relaxed">
-          At Welch Digital, we help brands and businesses build authentic connections online. From content creation to analytics, our team ensures your brand stays ahead of the curve in an ever-changing digital world.
-        </p>
-      </section>
+  <!-- Hero Section -->
+  <section class="text-center py-24 px-6 bg-gradient-to-r from-blue-600 to-purple-700">
+    <h1 class="text-5xl font-bold mb-6">Welch Digital</h1>
+    <p class="text-xl mb-8">Social Media Management that drives growth, engagement, and results.</p>
+    <a href="#contact" class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Get Started</a>
+  </section>
 
-      {/* Pricing Section */}
-      <section className="py-20 px-6 bg-gray-900">
-        <h2 className="text-4xl font-bold text-center mb-12">Our Plans</h2>
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {/* Starter Plan */}
-          <div className="bg-gray-800 p-8 rounded-2xl shadow-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">Starter</h3>
-            <p className="text-gray-400 mb-6">Perfect for small businesses testing the waters.</p>
-            <p className="text-3xl font-bold mb-6">$500<span className="text-lg">/month</span></p>
-            <ul className="text-left mb-6 space-y-2">
-              <li>✔ 8 social posts / month</li>
-              <li>✔ Basic analytics report</li>
-              <li>✔ 1 strategy call / month</li>
-            </ul>
-            <button className="bg-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-500 transition">Choose Starter</button>
-          </div>
+  <!-- About Section -->
+  <section class="py-20 px-8 max-w-5xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6">Why Welch Digital?</h2>
+    <p class="text-lg text-gray-300 leading-relaxed">
+      At Welch Digital, we help brands and businesses build authentic connections online. From content creation to analytics,
+      our team ensures your brand stays ahead of the curve in an ever-changing digital world.
+    </p>
+  </section>
 
-          {/* Growth Plan */}
-          <div className="bg-gray-800 p-8 rounded-2xl shadow-lg text-center border-2 border-blue-600">
-            <h3 className="text-2xl font-bold mb-4">Growth</h3>
-            <p className="text-gray-400 mb-6">Our most popular plan to scale your brand.</p>
-            <p className="text-3xl font-bold mb-6">$1,500<span className="text-lg">/month</span></p>
-            <ul className="text-left mb-6 space-y-2">
-              <li>✔ 20 social posts / month</li>
-              <li>✔ Advanced analytics + growth insights</li>
-              <li>✔ 2 strategy calls / month</li>
-              <li>✔ Community engagement management</li>
-            </ul>
-            <button className="bg-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-500 transition">Choose Growth</button>
-          </div>
+  <!-- Pricing Section -->
+  <section class="py-20 px-6 bg-gray-900">
+    <h2 class="text-4xl font-bold text-center mb-12">Our Plans</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Starter Plan -->
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg text-center">
+        <h3 class="text-2xl font-bold mb-4">Starter</h3>
+        <p class="text-gray-400 mb-6">Perfect for small businesses testing the waters.</p>
+        <p class="text-3xl font-bold mb-6">$500<span class="text-lg">/month</span></p>
+        <ul class="text-left mb-6 space-y-2">
+          <li>✔ 8 social posts / month</li>
+          <li>✔ Basic analytics report</li>
+          <li>✔ 1 strategy call / month</li>
+        </ul>
+        <a href="#contact" class="bg-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-500 transition">Choose Starter</a>
+      </div>
 
-          {/* Domination Plan */}
-          <div className="bg-gray-800 p-8 rounded-2xl shadow-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">Domination</h3>
-            <p className="text-gray-400 mb-6">Maximize impact with full-service social domination.</p>
-            <p className="text-3xl font-bold mb-6">$3,000<span className="text-lg">/month</span></p>
-            <ul className="text-left mb-6 space-y-2">
-              <li>✔ 40+ posts & videos / month</li>
-              <li>✔ Dedicated account manager</li>
-              <li>✔ Weekly strategy sessions</li>
-              <li>✔ Paid ads management</li>
-              <li>✔ Influencer partnerships</li>
-            </ul>
-            <button className="bg-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-500 transition">Choose Domination</button>
-          </div>
-        </div>
-      </section>
+      <!-- Growth Plan -->
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg text-center border-2 border-blue-600">
+        <h3 class="text-2xl font-bold mb-4">Growth</h3>
+        <p class="text-gray-400 mb-6">Our most popular plan to scale your brand.</p>
+        <p class="text-3xl font-bold mb-6">$1,500<span class="text-lg">/month</span></p>
+        <ul class="text-left mb-6 space-y-2">
+          <li>✔ 20 social posts / month</li>
+          <li>✔ Advanced analytics + growth insights</li>
+          <li>✔ 2 strategy calls / month</li>
+          <li>✔ Community engagement management</li>
+        </ul>
+        <a href="#contact" class="bg-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-500 transition">Choose Growth</a>
+      </div>
 
-      {/* Contact Section */}
-      <section className="py-20 px-8 max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6">Let’s Talk</h2>
-        <p className="text-lg text-gray-300 mb-6">Ready to take your brand to the next level? Reach out today and let’s make it happen.</p>
-        <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Contact Us</button>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-black text-gray-500 text-center py-6 border-t border-gray-800">
-        <p>© 2025 Welch Digital. All rights reserved.</p>
-      </footer>
+      <!-- Domination Plan -->
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg text-center">
+        <h3 class="text-2xl font-bold mb-4">Domination</h3>
+        <p class="text-gray-400 mb-6">Maximize impact with full-service social domination.</p>
+        <p class="text-3xl font-bold mb-6">$3,000<span class="text-lg">/month</span></p>
+        <ul class="text-left mb-6 space-y-2">
+          <li>✔ 40+ posts &amp; videos / month</li>
+          <li>✔ Dedicated account manager</li>
+          <li>✔ Weekly strategy sessions</li>
+          <li>✔ Paid ads management</li>
+          <li>✔ Influencer partnerships</li>
+        </ul>
+        <a href="#contact" class="bg-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-500 transition">Choose Domination</a>
+      </div>
     </div>
-  )
-}
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-8 max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6">Let’s Talk</h2>
+    <p class="text-lg text-gray-300 mb-6">
+      Ready to take your brand to the next level? Reach out today and let’s make it happen.
+    </p>
+    <a href="mailto:hello@welchdigital.org" class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+      Contact Us
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-500 text-center py-6 border-t border-gray-800">
+    <p>© 2025 Welch Digital. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
