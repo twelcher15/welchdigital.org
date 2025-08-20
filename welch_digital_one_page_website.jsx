@@ -1,5 +1,3 @@
-export default function Home() {
-  return (
     <div className="bg-black text-white min-h-screen font-sans">
       {/* Hero Section */}
       <section className="text-center py-24 px-6 bg-gradient-to-r from-blue-600 to-purple-700">
