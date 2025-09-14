@@ -3,183 +3,125 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Welch Digital — Social Media That Converts</title>
-  <meta name="description" content="Welch Digital helps brands grow with strategy, content, and paid social that converts attention into revenue." />
+  <title>Welch Digital</title>
+  <meta name="description" content="Welch Digital — Social Media Management that drives growth, engagement, and results.">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Open Graph (optional) -->
-  <meta property="og:title" content="Welch Digital — Social Media That Converts" />
-  <meta property="og:description" content="Strategy, content, and paid social that drives measurable growth." />
-  <meta property="og:url" content="https://welchdigital.org/index.html" />
-  <meta property="og:image" content="https://welchdigital.org/og-image.jpg" />
-
-  <!-- Active nav underline (optional) -->
+  <!-- (Optional) active-link underline -->
   <script defer>
-    document.addEventListener('DOMContentLoaded', () => {
-      const path = location.pathname.replace(/\/$/, '') || '/';
-      document.querySelectorAll('nav a').forEach(a => {
-        const href = a.getAttribute('href');
-        if (href === path || (path === '/' && href === '/')) {
-          a.classList.add('text-white','underline','decoration-blue-400','decoration-2','underline-offset-4');
-        }
-      });
+  document.addEventListener('DOMContentLoaded', () => {
+    const path = location.pathname.replace(/\/$/, '') || '/';
+    document.querySelectorAll('nav a').forEach(a => {
+      const href = a.getAttribute('href');
+      if (href === path || (path === '/' && href === '/')) {
+        a.classList.add('text-white','underline','decoration-blue-400','decoration-2','underline-offset-4');
+      }
     });
+  });
   </script>
 </head>
 <body class="bg-black text-white font-sans">
 
-  <!-- Nav -->
-<header class="sticky top-0 z-50 bg-black/90 backdrop-blur border-b border-gray-800/70">
-  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
-    <!-- Logo pinned far left -->
-    <a href="/" class="flex items-center gap-2 shrink-0" aria-label="Welch Digital — Home">
-      <!-- Mobile logo (xs–sm) -->
-      <img src="/docs/images/nav-mobile.png" alt="Welch Digital" class="h-8 w-auto block sm:hidden">
-      <!-- Desktop logo (sm+) -->
-      <img src="/docs/images/nav-desktop.jpg" alt="Welch Digital" class="h-8 w-auto hidden sm:block">
-    </a>
+  <!-- Simple desktop nav (left brand, right links) -->
+  <header class="border-b border-gray-800/70">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="/" class="font-semibold tracking-wide">Welch Digital</a>
+      <div class="flex items-center gap-6 text-sm text-gray-300 font-semibold">
+        <a href="/" class="hover:text-white">Home</a>
+        <a href="/about.html" class="hover:text-white">About</a>
+        <a href="/services.html" class="hover:text-white">Services</a>
+        <a href="/work.html" class="hover:text-white">Work</a>
+        <a href="/#contact" class="hover:text-white">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Mobile menu button -->
-    <button id="nav-toggle" aria-controls="primary-nav" aria-expanded="false"
-            class="md:hidden inline-flex items-center justify-center p-2 rounded border border-white/10 text-white">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-           viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-
-    <!-- Desktop links -->
-    <div id="primary-nav" class="hidden md:flex items-center gap-6 text-sm text-gray-300 font-bold">
-      <a href="/" class="hover:text-white">Home</a>
-      <a href="/about.html" class="hover:text-white">About</a>
-      <a href="/services.html" class="hover:text-white">Services</a>
-      <a href="/work.html" class="hover:text-white">Work</a>
-      <a href="/#contact" class="hover:text-white">Contact</a>
-    </div>
-  </nav>
-
-  <!-- Mobile dropdown panel -->
-  <div id="mobile-panel" class="md:hidden hidden border-t border-gray-800/70">
-    <div class="px-4 sm:px-6 py-3 flex flex-col gap-3 text-sm text-gray-300 font-bold">
-      <a href="/" class="hover:text-white py-1">Home</a>
-      <a href="/about.html" class="hover:text-white py-1">About</a>
-      <a href="/services.html" class="hover:text-white py-1">Services</a>
-      <a href="/work.html" class="hover:text-white py-1">Work</a>
-      <a href="/#contact" class="hover:text-white py-1">Contact</a>
-    </div>
+  <!-- Header image directly under nav (change filename if needed) -->
+  <div class="relative">
+    <img src="/images/header-hero.jpg" alt="Welch Digital header" class="w-full h-auto block" loading="eager" fetchpriority="high">
   </div>
-</header>
 
-  <!-- Header Image (desktop only) -->
-<div class="relative">
-  <img src="/images/header-hero.jpg"
-       alt="Welch Digital header"
-       class="w-full h-auto block"
-       loading="eager"
-       fetchpriority="high">
-</div>
+  <!-- Hero with your custom gradient -->
+  <section class="text-center py-24 px-6 bg-gradient-to-r from-[#49c4f0] to-[#000000]">
+    <h1 class="text-5xl font-bold mb-6">Welch Digital</h1>
+    <p class="text-xl mb-8">Social Media Management that drives growth, engagement, and results.</p>
+    <a href="#contact" class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Get Started</a>
+  </section>
 
-  <!-- Hero -->
-  <section class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-r from-[#49c4f0] to-[#000000] opacity-100"></div>
-    <div class="relative max-w-6xl mx-auto px-6 py-28 text-center">
-      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">Turn Attention Into Revenue</h1>
-      <p class="mt-4 text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
-        Strategy, content, and paid social that grows your audience—and your bottom line.
+  <!-- About -->
+  <section class="py-20 px-8 max-w-5xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6">Why Welch Digital?</h2>
+    <p class="text-lg text-gray-300 leading-relaxed">
+      At Welch Digital, we help brands and businesses build authentic connections online. From content creation to analytics,
+      our team ensures your brand stays ahead of the curve in an ever-changing digital world.
+    </p>
+  </section>
+
+  <!-- Inquiry / Contact -->
+  <section id="contact" class="py-20 px-6 bg-gray-900">
+    <div class="max-w-3xl mx-auto bg-gray-800/60 backdrop-blur rounded-2xl p-8 shadow-lg border border-gray-800">
+      <h2 class="text-4xl font-bold mb-3 text-center">Let’s Talk</h2>
+      <p class="text-gray-300 mb-8 text-center">
+        Tell us a bit about your brand and goals. We’ll reply within 1 business day.
       </p>
-      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#inquiry" class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Get a Free Audit</a>
-        <a href="/work.html" class="border border-white/70 px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition">See Our Work</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- Pain → Promise -->
-  <section class="max-w-6xl mx-auto px-6 py-16">
-    <div class="grid md:grid-cols-2 gap-10 items-start">
-      <div>
-        <h2 class="text-3xl font-bold mb-3">Organic feels slow. Ads feel expensive.</h2>
-        <p class="text-gray-300">
-          Most teams struggle to turn content into pipeline. We combine positioning, repeatable content systems,
-          and performance creative so every post has a job—and measurable results.
-        </p>
-        <ul class="mt-6 space-y-2 text-gray-300 list-disc pl-5">
-          <li>Hands-on expert help to maximize KPI's set by you</li>
-          <li>Creative custom built for each client and platform</li>
-          <li>Paid social layered on top for compounding reach</li>
-          <li>Dashboards that tie content to revenue</li>
-        </ul>
-      </div>
-      <div class="bg-gray-900/60 rounded-2xl p-6 border border-gray-800">
-        <h3 class="text-xl font-bold mb-4">Snapshot Results</h3>
-        <div class="grid grid-cols-2 gap-4 text-center">
-          <div class="rounded-xl bg-black/40 p-5 border border-gray-800">
-            <div class="text-3xl font-extrabold">+214%</div>
-            <p class="text-gray-400 text-sm mt-1">Reel Reach</p>
-          </div>
-          <div class="rounded-xl bg-black/40 p-5 border border-gray-800">
-            <div class="text-3xl font-extrabold">3.2x</div>
-            <p class="text-gray-400 text-sm mt-1">ROAS on Launches</p>
-          </div>
-          <div class="rounded-xl bg-black/40 p-5 border border-gray-800">
-            <div class="text-3xl font-extrabold">+68%</div>
-            <p class="text-gray-400 text-sm mt-1">Follower Growth</p>
-          </div>
-          <div class="rounded-xl bg-black/40 p-5 border border-gray-800">
-            <div class="text-3xl font-extrabold">-34%</div>
-            <p class="text-gray-400 text-sm mt-1">CPA Reduction</p>
-          </div>
-        </div>
-        <p class="text-xs text-gray-500 mt-4">*Representative outcomes; results vary by brand and offer.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- How we work -->
-  <section class="py-16 bg-gray-900">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-10">Simple, Proven System</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700">
-          <h3 class="font-bold text-xl mb-2">1) Position</h3>
-          <p class="text-gray-300">Audience, offer, and content pillars aligned to revenue goals.</p>
-        </div>
-        <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700">
-          <h3 class="font-bold text-xl mb-2">2) Produce</h3>
-          <p class="text-gray-300">Consistent creative: graphics, shorts, carousels, copy—built to travel.</p>
-        </div>
-        <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700">
-          <h3 class="font-bold text-xl mb-2">3) Promote</h3>
-          <p class="text-gray-300">Paid social layered on top; iterate with dashboards & lift tests.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Inquiry CTA -->
-  <section id="inquiry" class="py-20 px-6 bg-gradient-to-b from-gray-900 to-black border-t border-gray-800">
-    <div class="max-w-3xl mx-auto bg-gray-900/60 backdrop-blur rounded-2xl p-8 border border-gray-800">
-      <h2 class="text-3xl font-bold text-center mb-2">Request Your Free Audit</h2>
-      <p class="text-gray-300 text-center mb-8">Send your handles and goals—get a 3-point plan in your inbox.</p>
-
-      <!-- Replace FORM_ID_HERE with your Formspree ID -->
+      <!-- 🔁 PUT YOUR EXISTING FORMSPREE ENDPOINT BELOW -->
       <form action="https://formspree.io/f/xjkevvgy" method="POST" class="grid gap-5">
+        <!-- Honeypot -->
         <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
 
-        <label class="text-sm text-gray-400" for="name">Full name</label>
-        <input id="name" name="name" required class="p-3 rounded bg-black/40 border border-gray-700 focus:outline-none focus:ring focus:ring-blue-600" />
+        <label class="block text-sm text-gray-400" for="name">Full name</label>
+        <input id="name" name="name" required
+               class="p-3 rounded bg-black/40 border border-gray-700 focus:outline-none focus:ring focus:ring-blue-600">
 
-        <label class="text-sm text-gray-400" for="email">Email</label>
-        <input id="email" type="email" name="email" required class="p-3 rounded bg-black/40 border border-gray-700 focus:outline-none focus:ring focus:ring-blue-600" />
+        <label class="block text-sm text-gray-400" for="email">Email</label>
+        <input id="email" type="email" name="email" required
+               class="p-3 rounded bg-black/40 border border-gray-700 focus:outline-none focus:ring focus:ring-blue-600">
 
-        <label class="text-sm text-gray-400" for="handles">Website or social handles</label>
-        <input id="handles" name="handles" placeholder="@brand, yoursite.com" class="p-3 rounded bg-black/40 border border-gray-700 focus:outline-none focus:ring focus:ring-blue-600" />
+        <label class="block text-sm text-gray-400" for="company">Company / Brand (optional)</label>
+        <input id="company" name="company"
+               class="p-3 rounded bg-black/40 border border-gray-700 focus:outline-none focus:ring focus:ring-blue-600">
 
-        <label class="text-sm text-gray-400" for="goals">Goals</label>
-        <textarea id="goals" name="goals" required class="p-3 rounded bg-black/40 border border-gray-700 min-h-32 focus:outline-none focus:ring focus:ring-blue-600" placeholder="What are you trying to achieve? Any timelines or KPIs?"></textarea>
+        <label class="block text-sm text-gray-400" for="handle">Website or social handle (optional)</label>
+        <input id="handle" name="handle"
+               class="p-3 rounded bg-black/40 border border-gray-700 focus:outline-none focus:ring focus:ring-blue-600">
 
-        <button class="bg-blue-600 hover:bg-blue-500 transition px-6 py-3 rounded font-semibold w-full md:w-auto">Send Request</button>
-        <p class="text-xs text-gray-500">By submitting, you agree to be contacted about your inquiry.</p>
+        <div class="grid md:grid-cols-2 gap-4">
+          <fieldset class="border border-gray-700 rounded p-4">
+            <legend class="px-2 text-sm text-gray-400">Interested in</legend>
+            <label class="flex items-center gap-2 mt-2"><input type="checkbox" name="services" value="Strategy"> Strategy</label>
+            <label class="flex items-center gap-2 mt-2"><input type="checkbox" name="services" value="Content"> Content creation</label>
+            <label class="flex items-center gap-2 mt-2"><input type="checkbox" name="services" value="Paid Ads"> Paid ads</label>
+            <label class="flex items-center gap-2 mt-2"><input type="checkbox" name="services" value="Community"> Community management</label>
+            <label class="flex items-center gap-2 mt-2"><input type="checkbox" name="services" value="Analytics"> Analytics & reporting</label>
+          </fieldset>
+
+          <div>
+            <label class="block text-sm text-gray-400 mb-2">Approx. monthly budget</label>
+            <select name="budget" class="w-full p-3 rounded bg-black/40 border border-gray-700 focus:outline-none focus:ring focus:ring-blue-600">
+              <option value="" selected>Choose…</option>
+              <option><$500</option>
+              <option>$500–$1,500</option>
+              <option>$1,500–$3,000</option>
+              <option>$3,000+</option>
+            </select>
+          </div>
+        </div>
+
+        <label class="block text-sm text-gray-400" for="message">What are you trying to achieve?</label>
+        <textarea id="message" name="message" required
+                  class="p-3 rounded bg-black/40 border border-gray-700 min-h-36 focus:outline-none focus:ring focus:ring-blue-600"
+                  placeholder="Any timelines or KPIs?"></textarea>
+
+        <input type="hidden" name="_subject" value="New Inquiry — Welch Digital">
+        <!-- Optional redirect after submit: create docs/thanks.html first -->
+        <!-- <input type="hidden" name="_next" value="https://welchdigital.org/thanks.html"> -->
+
+        <button class="bg-blue-600 hover:bg-blue-500 transition px-6 py-3 rounded font-semibold w-full md:w-auto">
+          Send Inquiry
+        </button>
+        <p class="text-xs text-gray-500 mt-2">By submitting, you agree to be contacted about your inquiry.</p>
       </form>
     </div>
   </section>
