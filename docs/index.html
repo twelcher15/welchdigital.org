@@ -28,16 +28,14 @@
   <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
     <!-- Logo on far left -->
     <a href="/" class="shrink-0" aria-label="Welch Digital — Home">
-      <img
-        src="/images/header-hero.jpg"
-        alt="Welch Digital"
-        class="h-8 w-auto block"
-        loading="eager"
-        fetchpriority="high">
-    </a>
+      <!-- Mobile logo -->
+  <img src="/docs/images/nav-mobile.png" alt="" class="h-6 w-auto block sm:hidden">
+      <!-- Desktop logo -->
+  <img src="/docs/images/header-hero.jpg" alt="" class="h-8 w-auto hidden sm:block">
+</a>
 
     <!-- Right-side links (leave as-is) -->
-    <div class="flex flex-wrap md:flex-nowrap items-center gap-3 sm:gap-4 md:gap-6 text-xs sm:text-sm text-gray-300 font-bold">
+    <div class="flex flex-wrap md:flex-nowrap items-center gap-2.5 sm:gap-4 md:gap-6 text-[13px] sm:text-sm text-gray-300 font-bold">
   <a href="/" class="hover:text-white">Home</a>
   <a href="/about.html" class="hover:text-white">About</a>
   <a href="/services.html" class="hover:text-white">Services</a>
